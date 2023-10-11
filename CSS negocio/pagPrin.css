@@ -14,3 +14,27 @@
 
 /* -- El nav -- */
 
+.linkInicio:hover {
+    padding-left: .5rem;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.linkProductos:hover {
+    padding-left: .5rem;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+.linkPromos:hover {
+    padding-left: .5rem;
+    border-radius: 5px;
+    background-color: green;
+    cursor: pointer;
+}
+
+.linkNosotros:hover {
+    padding-left: .5rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 0, 0.596);
+}
