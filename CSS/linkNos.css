@@ -1,40 +1,25 @@
-/* -- Encabezado pequueño -- */
-
-.fotoOficialArriba {
-    width: 135px;
-}
-
-.wasapLink {
-    width: 40px;
-}
-
-.instaLink {
-    width: 60px;
-}
-
 /* -- El nav -- */
 
-.linkInicio:hover {
+.iniciolink:hover {
     padding-left: .5rem;
     border-radius: 5px;
     background-color: red;
 }
 
-.linkProductos:hover {
+.productoslink:hover {
     padding-left: .5rem;
     border-radius: 5px;
     background-color: blue;
 }
 
-.linkPromos:hover {
+.promoslink:hover {
     padding-left: .5rem;
     border-radius: 5px;
     background-color: green;
-    cursor: pointer;
 }
 
-.linkNosotros:hover {
+.nosotroslink {
     padding-left: .5rem;
     border-radius: 5px;
-    background-color: rgba(255, 255, 0, 0.596);
+    background-color: rgba(255, 255, 0, 0.712);
 }

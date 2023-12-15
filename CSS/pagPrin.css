@@ -1,0 +1,20 @@
+/* body */
+body {
+    background-image: url(../Imagenes/fondoOrig.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Foto oficial */
+.fotPrin {
+    position: relative;
+    top: 80px;    
+}
+
+.elForm {
+    position: relative;
+    top: 140px;
+}
+
