@@ -27,6 +27,9 @@
                 </div>
                 <div class="row">
                     <div class="col mt-3">
+                        <input type="number" name="dni" id="" placeholder="DNI" class="form-control">
+                    </div>
+                    <div class="col mt-3">
                         <input type="number" name="cuilt" id="" placeholder="Cuil o Cuit" class="form-control">
                     </div>
                 </div>
@@ -41,7 +44,16 @@
                 </div>
                 <div class="row">
                     <div class="col mt-3">
-                        Profesional<input type="checkbox" name="" id="">
+                        <select name="" id="queEs" class="form-select" onchange="clickEst()">
+                            <option value="">Usted es:</option>
+                            <option value="Profesional">Profesional</option>
+                            <option value="Estudiante">Estudiante</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" id="colAux">                            
+                        
                     </div>
                 </div>
                 <div class="row">
@@ -63,11 +75,59 @@
                     </div>
                 </div>
                 <div class="row mt-5 pb-3">
-                    <div class="col">
+                    <div class="col mt-1">
                         <input type="reset" value="Borrar todo" class="btn btn-danger form-control">                                               
                     </div>
-                    <div class="col">
-                        <input type="submit" value="Crear cuenta" class="btn btn-primary form-control">                                                    
+                    <div class="col-sm mt-1">                        
+                        <button type="button" class="btn btn-primary form-control" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Listo!
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">  <!-- modal-dialog-centered  PARA HACERLO CENTRADO-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Informacion importante!!!</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Con estos datos usted podrá <b>Iniciar sesion</b> en nuestra app:</p>
+
+                                        <!-- Recordar el usuario -->
+                                        <label for=""><b class="text-primary">Usuario:</b></label>
+                                        <div>0</div>                                        
+
+                                        <!-- Recordar la contraseña -->
+                                        <label for="" class="mt-2"><b class="text-primary">Contraseña:</b></label>
+                                        <div>a</div>
+
+                                        <hr>
+                                        <p>Estos datos te serviran para recuperar tu <b>Contraseña</b> por si te la olvidas</p>
+                                        <div class="row">
+                                            <div class="col mt-2">
+                                                <input type="text" name="colorFav" id="" placeholder="Color favorito" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col mt-3">
+                                                <input type="text" name="peliFav" id="" placeholder="Película favorita" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col mt-3">
+                                                <input type="text" name="mascotaFav" id="" placeholder="Nombre de mascota preferida" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button> -->
+                                        <input type="submit" value="Crear cuenta" class="btn btn-primary">
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>        
                     </div>
                 </div>
             </div>
@@ -76,5 +136,6 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="JS/crearCuenta.js"></script>
 </body>
 </html>
